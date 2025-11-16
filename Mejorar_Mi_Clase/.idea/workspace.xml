@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e597ccaa-29b8-48d0-9d34-428abdd88bfe" name="Changes" comment="Practice" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;moralesmorilla&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/moralesmorilla/Mejorar_Mi_Clase.git&quot;,
+    &quot;accountId&quot;: &quot;186918f6-5c91-438d-9923-5446a846958a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="35Yswo9idSlMggNUrsae8KyTUVc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PruebaConstructores.executor": "Run",
+    "Application.PruebaOrdenador.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "E:/1DAW/PROGRAMACION/1TRIM/Ejercicios_Practicas/U3/Mejorar_Mi_Clase/Mejorar_Mi_Clase/src/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\1DAW\PROGRAMACION\1TRIM\Ejercicios_Practicas\U3\Mejorar_Mi_Clase\Mejorar_Mi_Clase\src\Ejercicios_U3\U3_E1_Ordenador" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PruebaOrdenador">
+    <configuration name="PruebaConstructores" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constructores.PruebaConstructores" />
+      <module name="Mejorar_Mi_Clase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constructores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaOrdenador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicios_U3.U3_E1_Ordenador.PruebaOrdenador" />
+      <module name="Mejorar_Mi_Clase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicios_U3.U3_E1_Ordenador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PruebaOrdenador" />
+        <item itemvalue="Application.PruebaConstructores" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e597ccaa-29b8-48d0-9d34-428abdd88bfe" name="Changes" comment="" />
+      <created>1763298581359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763298581359</updated>
+    </task>
+    <servers />
+  </component>
+</project>
