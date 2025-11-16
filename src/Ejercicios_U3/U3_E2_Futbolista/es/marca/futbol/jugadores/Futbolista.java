@@ -17,21 +17,23 @@ public class Futbolista {
             System.out.println("Un jugador lesionado no puede marcar golegit add .");
         }
     }
-    public void marcaGol(int numGoles){
-        if (!lesionado){
-            this.numGoles+=numGoles;
-        }
-    }
     public void golAnulado(){
-        if (numGoles>0)
-            numGoles--;
+        assert numGoles<0: "El valor de los goles debe ser postivo";
+                numGoles--;
+    }
+    public void marcaGol(int numGoles){
+        assert lesionado: "Un jugador lesionado no puede marcar goles";
+        this.numGoles+=numGoles;
+
     }
     public void golAnulado(int numGoles){
         if (numGoles>0){
             this.numGoles-=numGoles;
+        }else {
+            System.out.println("El numero de goles siempre debe ser positivo");
         }
     }
-    public void numGoles(){
+    public void numeroGoles(){
         System.out.println("El jugador "+nombre+" lleva "+numGoles);
     }
 

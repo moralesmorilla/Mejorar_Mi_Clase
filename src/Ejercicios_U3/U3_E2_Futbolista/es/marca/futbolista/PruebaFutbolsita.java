@@ -8,7 +8,7 @@ public class PruebaFutbolsita {
         f.marcaGol();
         f.marcaGol(20);
         f.golAnulado();
-        f.golAnulado(10);
-        f.numGoles();
+        f.golAnulado(21);
+        f.numeroGoles();
     }
 }
