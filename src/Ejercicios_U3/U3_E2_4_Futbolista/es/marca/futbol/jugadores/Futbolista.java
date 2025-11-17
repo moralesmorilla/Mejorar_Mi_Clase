@@ -1,4 +1,4 @@
-package Ejercicios_U3.U3_E2_Futbolista.es.marca.futbol.jugadores;
+package Ejercicios_U3.U3_E2_4_Futbolista.es.marca.futbol.jugadores;
 
 public class Futbolista {
     private String nombre,apellidos;
@@ -6,32 +6,31 @@ public class Futbolista {
     private double salario;
     private boolean lesionado;
 
-    public Futbolista(String nombre, String apellidos) {
+    public Futbolista(String nombre, String apellidos,double salario) {
+        assert salario>=0:"Error:El salario debe ser positivo";
         this.nombre = nombre;
         this.apellidos = apellidos;
     }
     public void marcaGol(){
-        if (!lesionado){
-            numGoles++;
-        }else {
-            System.out.println("Un jugador lesionado no puede marcar golegit add .");
-        }
+        assert !lesionado && numGoles>=0:"Error: No puede estar lesionado,numero de goles mayor que cero";
+        numGoles++;
     }
     public void golAnulado(){
-        assert numGoles<0: "El valor de los goles debe ser postivo";
+        assert numGoles>0: "El valor de los goles debe ser postivo";
+
                 numGoles--;
     }
     public void marcaGol(int numGoles){
-        assert lesionado: "Un jugador lesionado no puede marcar goles";
+        assert !lesionado: "Un jugador lesionado no puede marcar goles";
+        assert numGoles<10:"Error:El programa solo permite hasta 9 goles";
         this.numGoles+=numGoles;
 
     }
     public void golAnulado(int numGoles){
-        if (numGoles>0){
-            this.numGoles-=numGoles;
-        }else {
-            System.out.println("El numero de goles siempre debe ser positivo");
-        }
+        assert numGoles>0:"Error:El numero de goles debe ser positivo";
+        assert numGoles<10:"Error:El programa solo permite hasta 9 goles anulados";
+        this.numGoles-=numGoles;
+
     }
     public void numeroGoles(){
         System.out.println("El jugador "+nombre+" lleva "+numGoles);
