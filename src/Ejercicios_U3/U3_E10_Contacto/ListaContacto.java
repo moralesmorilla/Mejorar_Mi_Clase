@@ -1,10 +1,6 @@
 package Ejercicios_U3.U3_E10_Contacto;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class ListaContacto {
-    Scanner sc = new Scanner(System.in);
     private int numContactos;
     private Contacto[] listaContacto;
     //Constructor
@@ -32,7 +28,7 @@ public class ListaContacto {
         //Rellenando el hueco libre que haya
         for (int i = 0; i < listaContacto.length ; i++) {
             if (listaContacto[i]==null){
-                listaContacto[i]=new Contacto(c.getNombre(), c.getApellidos());
+                listaContacto[i]=c;
                 System.out.println("Contacto añadido");
                 return;
             }
@@ -42,54 +38,52 @@ public class ListaContacto {
         System.out.println("La lista esta llena");
     }
     //Crear metodos sobrecargados que nos permitan buscar contacto
-    public void buscarContactoEmail(Contacto c){
+    public Contacto buscarContactoEmail(String email){
         for (int i=0;i<listaContacto.length;i++){
             Contacto actual = listaContacto[i];
-            if (actual!=null && actual.getEmail().equals(c.getEmail())){
+            if (actual!=null && actual.getEmail().equals(email)){
                 System.out.println(actual);
-                return;
-            }else{
-                System.out.println("Contacto no encontrado");
-
+                return actual;
             }
         }
+        System.out.println("Contacto no encontrado");
+        return null;
     }
-    public void buscarContactoTelefono(Contacto c){
+    public Contacto buscarContactoTelefono(String telefono){
         for (int i=0;i<listaContacto.length;i++){
             Contacto actual = listaContacto[i];
-            if (actual!=null && actual.getTelefono().equals(c.getTelefono())){
+            if (actual!=null && actual.getTelefono().equals(telefono)){
                 System.out.println(actual);
-                return;
-            }else{
-                System.out.println("Contacto no encontrado");
-
+                return actual;
             }
         }
+        System.out.println("Contacto no encontrado");
+        return null;
     }
-    public void buscarContactoNombreApellido(Contacto c){
+    public Contacto buscarContactoNombreApellido(String nombre, String apellidos){
         for (int i=0;i<listaContacto.length;i++){
             Contacto actual = listaContacto[i];
-            if (actual!=null && actual.getNombre().equals(c.getNombre()) && actual.getApellidos().equals(c.getApellidos())){
+            if (actual!=null && actual.getNombre().equals(nombre)
+                    && actual.getApellidos().equals(apellidos)){
                 System.out.println(actual);
-                return;
-            }else{
-                System.out.println("Contacto no encontrado");
-
+                return actual;
             }
         }
+        System.out.println("Contacto no encontrado");
+        return null;
     }
 
-    public void borrarContactoNombreApellido(Contacto c){
+    public void borrarContactoNombreApellido(String nombre, String apellidos){
 
     }
-    public void borrarContactoTelefono(Contacto c){
+    public void borrarContactoTelefono(String telefono){
 
     }
-    public void borrarContactoEmail(Contacto c){
+    public void borrarContactoEmail(String email){
 
     }
 
-    public void vaciarLista(Contacto c){
+    public void vaciarLista(){
         for (int i = 0; i < listaContacto.length; i++) {
             listaContacto[i]=null;
         }

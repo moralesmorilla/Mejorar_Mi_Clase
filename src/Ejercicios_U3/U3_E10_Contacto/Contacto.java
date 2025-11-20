@@ -4,7 +4,10 @@ public class Contacto {
     private String nombre,apellidos,email,telefono;
 
     public Contacto(){
-
+        this.nombre="";
+        this.apellidos="";
+        this.email="";
+        this.telefono="";
     }
 
     public Contacto(String nombre, String apellidos) {
@@ -12,22 +15,27 @@ public class Contacto {
         assert apellidos!=null && !apellidos.isEmpty():"Error:Apellido debe de estar relleno";
         this.nombre = nombre;
         this.apellidos = apellidos;
+        this.email="";
+        this.telefono="";
     }
 
     public Contacto(String nombre, String apellidos, String email, String telefono) {
         assert nombre!=null && !nombre.isEmpty():"Error:Nombre debe de estar relleno";
         assert apellidos!=null && !apellidos.isEmpty():"Error:Apellido debe de estar relleno";
         assert email!=null && !email.trim().isEmpty():"Error:Emal debe de estar relleno";
-        assert telefono!=null :"Error:Debes introducir un numero";
-        assert telefono.length()!=9:"Error:El numero debe ser de 9 digitos";
+        assert email.contains("@") && email.contains("."):"Error:El email debe contener @ y .";
+        assert telefono!=null && !telefono.trim().isEmpty() :"Error:Debes introducir un numero";
+        assert telefono.length()==9:"Error:El numero debe ser de 9 digitos";
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.email = email;
         this.telefono = telefono;
     }
-    public void imprimirDatos(){
-        System.out.println(nombre+" "+apellidos+" con numero "+telefono+" cuyo email es "+email);
-
+    @Override
+    public String toString(){
+        return nombre+" "+apellidos+
+                " |Telefono: "+telefono+
+                " |email: "+email;
     }
 
     public String getNombre() {
