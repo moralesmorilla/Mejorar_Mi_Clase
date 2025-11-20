@@ -55,10 +55,28 @@ public class ListaContacto {
         }
     }
     public void buscarContactoTelefono(Contacto c){
+        for (int i=0;i<listaContacto.length;i++){
+            Contacto actual = listaContacto[i];
+            if (actual!=null && actual.getTelefono().equals(c.getTelefono())){
+                System.out.println(actual);
+                return;
+            }else{
+                System.out.println("Contacto no encontrado");
 
+            }
+        }
     }
     public void buscarContactoNombreApellido(Contacto c){
+        for (int i=0;i<listaContacto.length;i++){
+            Contacto actual = listaContacto[i];
+            if (actual!=null && actual.getNombre().equals(c.getNombre()) && actual.getApellidos().equals(c.getApellidos())){
+                System.out.println(actual);
+                return;
+            }else{
+                System.out.println("Contacto no encontrado");
 
+            }
+        }
     }
 
     public void borrarContactoNombreApellido(Contacto c){
