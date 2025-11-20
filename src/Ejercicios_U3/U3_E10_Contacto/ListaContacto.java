@@ -74,13 +74,41 @@ public class ListaContacto {
     }
 
     public void borrarContactoNombreApellido(String nombre, String apellidos){
-
+        for (int i = 0; i < listaContacto.length; i++) {
+            Contacto actual = listaContacto[i];
+            if (actual!=null
+                    && actual.getNombre().equals(nombre)
+                    && actual.getApellidos().equals(apellidos)){
+                System.out.println(nombre+" "+apellidos+" "+"han sido borrados");
+                listaContacto[i]=null;
+                System.out.println("El Usuario con :"+actual.getNombre()+" "+actual.getApellidos()
+                        +" ha sido eliminado");
+                return;
+            }
+        }
+        System.out.println("Usuario no encontrado");
     }
     public void borrarContactoTelefono(String telefono){
-
+        for (int i = 0; i < listaContacto.length; i++) {
+            Contacto actual = listaContacto[i];
+            if (actual!=null && actual.getTelefono().equals(telefono)){
+                listaContacto[i]=null;
+                System.out.println("El Usuario con telefono: "+actual.getTelefono()+" ha sido eliminado");
+                return;
+            }
+        }
+        System.out.println("Usuario no encontrado");
     }
     public void borrarContactoEmail(String email){
-
+        for (int i = 0; i < listaContacto.length; i++) {
+            Contacto actual = listaContacto[i];
+            if (actual!=null &&
+            actual.getEmail().equals(email)){
+                System.out.println("El usuario "+actual.getNombre()+
+                        "con email: "+actual.getEmail()+" ha sido eliminado");
+            }
+        }
+        System.out.println("Usuario no encontrado");
     }
 
     public void vaciarLista(){
@@ -90,8 +118,14 @@ public class ListaContacto {
     }
     public void listarContactos(){
         for (int i=0;i<listaContacto.length;i++) {
+            Contacto actual = listaContacto[i];
             if(listaContacto[i]!=null){
-                System.out.println(listaContacto[i]);
+
+                System.out.println("Usuario "+(i+1));
+                System.out.println(actual.getNombre()+" "+actual.getApellidos());
+                System.out.println("Telefono: "+actual.getTelefono());
+                System.out.println("Email: "+actual.getTelefono());
+                System.out.println("---------------------------");
             }
 
         }

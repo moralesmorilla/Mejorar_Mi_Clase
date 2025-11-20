@@ -37,6 +37,12 @@ public class Contacto {
                 " |Telefono: "+telefono+
                 " |email: "+email;
     }
+//    public void imprimir(){
+//        System.out.println("Dato de Usuario");
+//        System.out.println(nombre+" "+apellidos);
+//        System.out.println("Telefono: "+telefono);
+//        System.out.println("Email: "+email);
+//    }
 
     public String getNombre() {
         return nombre;
