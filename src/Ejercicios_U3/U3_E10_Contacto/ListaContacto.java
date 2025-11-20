@@ -8,9 +8,9 @@ public class ListaContacto {
     private int numContactos;
     private Contacto[] listaContacto;
     //Constructor
-    public ListaContacto(){
-
-    }
+//    public ListaContacto(){
+//
+//    }
 
     //Con este metodo creamos la lista con el numero de contacto que queremos
     public ListaContacto(int numContactos) {
@@ -32,7 +32,7 @@ public class ListaContacto {
         //Rellenando el hueco libre que haya
         for (int i = 0; i < listaContacto.length ; i++) {
             if (listaContacto[i]==null){
-                listaContacto[i]=c;
+                listaContacto[i]=new Contacto(c.getNombre(), c.getApellidos());
                 System.out.println("Contacto añadido");
                 return;
             }
@@ -61,4 +61,27 @@ public class ListaContacto {
 
     }
 
+    public void borrarContactoNombreApellido(Contacto c){
+
+    }
+    public void borrarContactoTelefono(Contacto c){
+
+    }
+    public void borrarContactoEmail(Contacto c){
+
+    }
+
+    public void vaciarLista(Contacto c){
+        for (int i = 0; i < listaContacto.length; i++) {
+            listaContacto[i]=null;
+        }
+    }
+    public void listarContactos(){
+        for (int i=0;i<listaContacto.length;i++) {
+            if(listaContacto[i]!=null){
+                System.out.println(listaContacto[i]);
+            }
+
+        }
+    }
 }
